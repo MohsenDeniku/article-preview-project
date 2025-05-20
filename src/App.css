@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(192, 214, 233, 0.726);
+
+}
+.app {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+}
+.main-img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.text-container {
+  padding: 20px 40px;
+}
+h3, h4 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+}
+p {
+  color: hsl(214, 17%, 51%);
+  margin-bottom: 40px;
+}
+
+.author-section {
+  position: relative;
+  height: 70px;
+  padding: 40px 0;
+
+}
+.author-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 40px;
+  height: 100%;
+
+}
+.author-name-date h4{
+  margin-bottom: 5px;
+  margin: auto 0;
+}
+.author-date {
+  color: hsl(212, 23%, 69%);
+}
+.author-img {
+  width: 50px;
+  border-radius: 50%;
+}
+.author-left {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.share-icon-container {
+  background-color: hsl(210, 46%, 95%);
+  width: 35px;
+  height: 35px;
+  place-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* links */
+.social-media-links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: hsl(217, 19%, 35%);
+  align-items: center;
+  height: 100%;
+  border-radius: 0 0 10px 10px;
+  
+}
+.share-text {
+  font-weight: 300;
+  letter-spacing: 7px;
+  font-size: 1.1rem;
+  font-family: "Manrope", sans-serif;
+  color: hsl(212, 23%, 69%);
+}
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.links-container img {
+  width: 23px;
+}
+
+
+@media (min-width: 768px) {
+  .app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    border-radius: 10px;
+    max-width: 1600px;
+  }
+  .main-img  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+  }
+  .social-media-links {
+    border-radius: 0 0 10px 0;
+  }
+}
